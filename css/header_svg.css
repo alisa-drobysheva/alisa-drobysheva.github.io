@@ -1,0 +1,126 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    border:none;
+    outline:none;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 1.5;
+    height: 100vh;
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+/*    font-family: 'Prosto One';*/
+    font-weight: 900;
+    font-variant-caps: all-small-caps;
+    margin-bottom: 0.45rem;
+    line-height: 1.2;
+}
+
+h2 {
+    margin-bottom: 0.45rem;
+
+}
+
+h3 {
+    margin-bottom: 0.93em;
+    margin-top: 0.84em;
+}
+
+h1 { font-size: 3.1rem; }
+h2 { font-size: 3rem; }
+h3 { font-size: 1.5rem; }
+
+p {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+header {
+    background-color: #FFFDF3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 30px 50px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index:9999;
+}
+
+#drobysheva {
+    width: 100%;
+    max-width: 150vh;
+/*    max-height: 90vh;*/
+}
+
+#alisa {
+    display: block;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    margin-top: 5px;
+    transform: translateX(-50%) translateY(-86%);
+    width: 14%;
+    z-index: 5;
+}
+
+#alisa:hover svg {
+    fill: #FCB942;
+}
+
+header .box g {
+    fill: #FFFDF3;
+    stroke: #000;
+    stroke-width: 4px;
+    transition: fill 300ms ease;
+}
+ 
+.st01:hover  {
+    fill: #647FAF; 
+}
+.st02:hover  {
+    fill: #DB5640; 
+}
+.st03:hover  {
+    fill: #857293; 
+}
+.st04:hover  {
+    fill: #527C50; 
+}
+.st05:hover  {
+    fill: #FCB942; 
+}
+.st06:hover  {
+    fill: #FCB942; 
+}
+.st07:hover  {
+    fill: #527C50; 
+}
+.st08:hover  {
+    fill: #647FAF; 
+}
+.st09:hover  {
+    fill: #DB5640; 
+}
+
+.next {
+  
+    background-image: url("../img/next.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    bottom: 0;
+    margin-bottom: 28px;
+    transform: translateX(-50%);
+}

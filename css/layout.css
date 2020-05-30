@@ -1,0 +1,82 @@
+section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 2px;
+/*    height: 100vh;*/
+    position: relative;
+}
+
+section .thema,
+section .thema-content {
+    width: 50%;
+    padding-top:30px;
+    padding-bottom:20px;
+}
+
+section .thema {
+    background-color: #FFFDF3;
+    padding-right: 25px;
+    padding-left: 40px;
+    position: -webkit-sticky;
+    position: sticky;
+    max-height: 100vh;
+    top:0;
+    z-index:9;
+}
+
+#about .thema {
+    background: transparent;
+    position: static;
+}
+
+section .thema-content {
+    padding-left: 25px;
+    padding-right: 40px;
+    padding-bottom:40px;
+/*    overflow: scroll;*/
+    overflow-x: hidden;
+}
+
+section .thema-content.image{
+    max-width: 75%;
+    margin-top: 10px;
+    padding-left: 100px;
+}
+
+section.v-line:after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 1px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-color: #ccc;
+}
+
+section:before {
+    content: "";
+    display: block;
+    width:100%;
+    height: 1px;
+    background-color: #ccc;
+    position: absolute;
+    left:0; top:0;
+    z-index: 3;
+}
+
+@media screen and (orientation:portrait) and (max-width:767px) {
+
+    section .thema,
+    section .thema-content {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    section.v-line:after {
+        display: none;
+    }
+}

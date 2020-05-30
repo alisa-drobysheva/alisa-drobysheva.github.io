@@ -1,0 +1,24 @@
+img {
+    width: 100%;
+    display: block;
+    max-width: 100%;
+}
+
+.slider .item img {
+    /* Для заповнення ілюстрацією батьківського контейнера   */
+    /* Застосовуємо власт. object-fit  */
+    object-fit: contain;
+    object-position: center center;
+    max-height: 70vh;
+}
+
+/* Якщо потрібно інакше позиціонувати ілюстрацію */
+/* (стосується в першу чергу телефонів) */
+/* додавайте додатковий клас в html */
+/* і описуйте в css інакше позиціонування */
+.slider .item.pos-bottom img {
+    object-position: center bottom;
+}
+.slider .item.pos-left img {
+    object-position: left center;
+}
